@@ -15,7 +15,7 @@ Select Radio button
     Check Checkbox    ${radio_button}
     Sleep    2s
 Input Text For Dynamic Dropdown 
-     [Arguments]    ${text}    
+    [Arguments]    ${text}    
     Fill Text    ${txtbox_dynamic}     ${text} 
     Click    ${autocomplt_st}    
 Select Drop Down List    
@@ -24,7 +24,6 @@ Select Drop Down List
 Check Box Option
     Check Checkbox    ${checkbox_1} 
     Should Contain   ${checkbox_1}    checkBoxOption1
-    
     Check Checkbox    ${checkbox_3}  
     # Wait For Elements State    ${checkbox_1}
     # FOR    ${checkbox}    IN    @{check_ex}
